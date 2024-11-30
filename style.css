@@ -64,6 +64,8 @@ body {
   align-items: center;
 }
 
+/* Form Element Styles Start */
+
 form {
   background-color: var(--secondary-color);
   width: 75%;
@@ -123,3 +125,5 @@ form:hover::before {
     filter: blur(19px);
   }
 }
+
+/* Form Element Styles End */
