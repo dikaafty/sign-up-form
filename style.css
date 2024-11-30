@@ -242,3 +242,25 @@ button[type="submit"] {
   position: relative;
 }
 
+button[type="submit"]::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 10px var(--tertiary-color);
+  z-index: -1;
+}
+
+button[type="submit"]:hover {
+  z-index: 0;
+  color: #f0f0f0;
+}
+
+button[type="submit"]:hover::after {
+  width: 100%;
+  transition: width 200ms ease-in-out;
+}
