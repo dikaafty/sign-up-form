@@ -161,6 +161,25 @@ form:hover::before {
 
 .right-container h1 {
   text-align: center;
+  position: relative;
+}
+
+.right-container h1::before,
+.right-container h1::after {
+  content: "Elevate Your Status";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  transition: all 500ms ease-in-out;
+}
+
+.right-container h1:hover::before {
+  top: -15px;
+}
+
+.right-container h1:hover::after {
+  top: 15px;
 }
 
 .inputs-container {
