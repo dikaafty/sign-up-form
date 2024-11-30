@@ -225,3 +225,14 @@ form:hover::before {
   display: flex;
   justify-content: center;
 }
+
+button[type="submit"] {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+}
