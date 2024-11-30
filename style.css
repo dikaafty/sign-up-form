@@ -54,5 +54,11 @@ button:-moz-focusring,
 body {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
