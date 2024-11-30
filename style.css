@@ -42,3 +42,11 @@ button:-moz-focusring,
 }
 
 /* Reset And Normalize End */
+
+:root {
+  --primary-color: #242424;
+  --secondary-color: #eaeaea;
+  --tertiary-color: #ffbf00;
+  --para-size: 0.8rem;
+  --label-text-size: 1rem;
+}
