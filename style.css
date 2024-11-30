@@ -128,6 +128,11 @@ form:hover::before {
 
 /* Form Element Styles End */
 
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 .left-container {
   width: 38%;
   height: 100%;
