@@ -45,8 +45,8 @@ button:-moz-focusring,
 
 :root {
   --primary-color: #242424;
-  --secondary-color: #eaeaea;
-  --tertiary-color: #ffbf00;
+  --secondary-color: #f0f0f0;
+  --tertiary-color: #ec4040;
   --para-size: 0.8rem;
   --label-text-size: 1rem;
 }
@@ -60,5 +60,16 @@ body {
 
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: var(--secondary-color);
+  width: 75%;
+  height: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 5px var(--tertiary-color);
+
+  display: flex;
   align-items: center;
 }
