@@ -144,3 +144,12 @@ form:hover::before {
   line-height: 1.5;
 }
 
+.right-container {
+  width: 59%;
+  height: 88%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
