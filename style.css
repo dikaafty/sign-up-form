@@ -68,8 +68,57 @@ form {
   width: 75%;
   height: 80%;
   border-radius: 15px;
-  box-shadow: 0 0 5px 5px var(--tertiary-color);
+  position: relative;
+  overflow: visible;
 
   display: flex;
   align-items: center;
+}
+
+form::after, 
+form::before {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  inset: -5px;
+  background: conic-gradient(from var(--angle), var(--tertiary-color), 
+  var(--primary-color), var(--tertiary-color), var(--primary-color), 
+  var(--tertiary-color));
+  z-index: -1;
+}
+
+form::before {
+  z-index: -2;
+  filter: blur(20px);
+  opacity: 0.7;
+}
+
+form:hover::after {
+  animation: glowing-border 3.5s linear infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes glowing-border {
+  from {
+    --angle: 0deg;
+  } to {
+    --angle: 360deg;
+  }
+}
+
+form:hover::before {
+  animation: blur-effect 3.5s linear infinite, glowing-border 3.5s linear infinite;
+}
+
+@keyframes blur-effect {
+  from {
+    filter: blur(20px);
+  } to {
+    filter: blur(19px);
+  }
 }
