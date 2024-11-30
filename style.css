@@ -168,3 +168,7 @@ form:hover::before {
   align-items: center;
   gap: 22px;
 }
+
+label {
+  display: none;
+}
