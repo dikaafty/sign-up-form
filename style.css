@@ -44,9 +44,9 @@ button:-moz-focusring,
 /* Reset And Normalize End */
 
 :root {
-  --primary-color: #242424;
+  --primary-color: #111111;
   --secondary-color: #f0f0f0;
-  --tertiary-color: #ec4040;
+  --tertiary-color: #e01010;
   --para-size: 0.8rem;
   --label-text-size: 1rem;
 }
