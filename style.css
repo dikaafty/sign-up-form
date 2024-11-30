@@ -220,3 +220,8 @@ form:hover::before {
   top: -12px;
   color: var(--secondary-color);
 }
+
+.right-container div:last-of-type {
+  display: flex;
+  justify-content: center;
+}
