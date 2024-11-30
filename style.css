@@ -169,13 +169,15 @@ form:hover::before {
   gap: 22px;
 }
 
-.input-left {
+.input-left,
+.input-right {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.input-left input {
+.input-left input,
+.input-right input {
   width: 220px;
   height: 40px;
   padding: 10px;
@@ -184,21 +186,25 @@ form:hover::before {
   border-radius: 5px;
 }
 
-.input-left input:focus {
+.input-left input:focus,
+.input-right input:focus {
   box-shadow: 4px 4px 0 var(--tertiary-color), 4px 4px 10px var(--tertiary-color);
   outline: none;
   transition: box-shadow 300ms ease-in-out;
 }
 
-.input-left div:first-of-type {
+.input-left div:first-of-type,
+.input-right div:first-of-type {
   position: relative;
 }
 
-.input-left div:last-of-type {
+.input-left div:last-of-type,
+.input-right div:last-of-type {
   position: relative;
 }
 
-.input-left label {
+.input-left label,
+.input-right label {
   position: absolute;
   top: 50%;
   left: 2%;
@@ -208,7 +214,9 @@ form:hover::before {
 }
 
 .input-left input:focus ~ label,
-.input-left input:valid ~ label {
+.input-left input:valid ~ label,
+.input-right input:focus ~ label,
+.input-right input:valid ~ label {
   top: -12px;
   color: var(--secondary-color);
 }
