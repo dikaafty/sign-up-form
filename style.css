@@ -194,7 +194,7 @@ form:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 46px;
 }
 
 .input-left,
