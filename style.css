@@ -242,10 +242,14 @@ form:hover::before {
 }
 
 .input-left input:focus ~ label,
-.input-left input:valid ~ label,
+.input-left input:not(:placeholder-shown) ~ label,
 .input-right input:focus ~ label,
 .input-right input:valid ~ label {
   top: -12px;
+  color: var(--secondary-color);
+}
+
+.input-left input::placeholder {
   color: var(--secondary-color);
 }
 
