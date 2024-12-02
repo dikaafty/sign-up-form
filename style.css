@@ -249,7 +249,8 @@ form:hover::before {
   color: var(--secondary-color);
 }
 
-.input-left input::placeholder {
+.input-left input::placeholder,
+.input-right input::placeholder {
   color: var(--secondary-color);
 }
 
