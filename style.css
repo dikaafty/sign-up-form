@@ -248,7 +248,7 @@ form:hover::before {
 
 .input-left input:valid:not(:placeholder-shown) + span::before,
 .input-right input:valid:not(:placeholder-shown) + span::before,
-.input-right input[type="password"]:not(:placeholder-shown).valid + span::before {
+.input-right input[type="password"]:valid:not(:placeholder-shown).valid + span::before {
   content: "✔";
   font-size: 1.4rem;
   color: #1dd41d;
