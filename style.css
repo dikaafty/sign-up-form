@@ -284,7 +284,7 @@ form:hover::before {
   position: absolute;
   top: 50px;
   right: 5px;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: var(--tertiary-color);
 }
 
