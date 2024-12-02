@@ -278,7 +278,8 @@ form:hover::before {
 }
 
 .input-left input:invalid:not(:placeholder-shown) ~ label,
-.input-right input:invalid:not(:placeholder-shown) ~ label {
+.input-right input:invalid:not(:placeholder-shown) ~ label,
+.input-right input[type="password"]:not(:placeholder-shown).invalid ~ label {
   color: var(--tertiary-color);
 }
 
