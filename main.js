@@ -7,4 +7,10 @@ const invalidConfirm = document.querySelector(".invalid");
 const validatePass = () => {
   const passVal = password.value;
   const confirmPassVal = confirmPassword.value;
+
+  if(passVal !== confirmPassVal) {
+    invalidConfirm.textContent = "Password is not match!";
+  } else {
+    invalidConfirm.textContent = "";
+  }
 }
