@@ -16,4 +16,5 @@ const validatePass = () => {
 }
 
 // Event Listener
-password.addEventListener("keyup")
+password.addEventListener("keyup", validatePass);
+confirmPassword.addEventListener("keyup", validatePass);
