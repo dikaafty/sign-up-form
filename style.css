@@ -231,6 +231,27 @@ form:hover::before {
   position: relative;
 }
 
+.input-left input + span::before,
+.input-right input + span::before {
+  position: absolute;
+  top: 8px;
+  right: -25px;
+}
+
+.input-left input:invalid:not(:placeholder-shown) + span::before,
+.input-right input:invalid:not(:placeholder-shown) + span::before {
+  content: "❌";
+  font-size: 1.4rem;
+  color: var(--tertiary-color);
+}
+
+.input-left input:valid:not(:placeholder-shown) + span::before,
+.input-right input:valid:not(:placeholder-shown) + span::before {
+  content: "✔";
+  font-size: 1.4rem;
+  color: #1dd41d;
+}
+
 .input-left label,
 .input-right label {
   position: absolute;
