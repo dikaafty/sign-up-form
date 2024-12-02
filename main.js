@@ -10,8 +10,12 @@ const validatePass = () => {
 
   if(passVal !== confirmPassVal && passVal && confirmPassVal) {
     invalidConfirm.textContent = "⚠︎ Password is not match!";
+    confirmPassword.classList.add("invalid");
+    confirmPassword.classList.remove("valid")
   } else {
     invalidConfirm.textContent = "";
+    confirmPassword.classList.add("valid");
+    confirmPassword.classList.remove("invalid");
   }
 }
 
