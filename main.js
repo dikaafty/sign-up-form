@@ -8,9 +8,12 @@ const validatePass = () => {
   const passVal = password.value;
   const confirmPassVal = confirmPassword.value;
 
-  if(passVal !== confirmPassVal) {
+  if(passVal !== confirmPassVal && passVal && confirmPassVal) {
     invalidConfirm.textContent = "Password is not match!";
   } else {
     invalidConfirm.textContent = "";
   }
 }
+
+// Event Listener
+password.addEventListener("keyup")
