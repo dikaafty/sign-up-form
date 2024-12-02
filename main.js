@@ -5,5 +5,6 @@ const invalidConfirm = document.querySelector(".invalid");
 
 // Function
 const validatePass = () => {
-  
+  const passVal = password.value;
+  const confirmPassVal = confirmPassword.value;
 }
