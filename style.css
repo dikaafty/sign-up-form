@@ -280,6 +280,14 @@ form:hover::before {
   color: var(--tertiary-color);
 }
 
+.input-right p {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  font-size: 0.6rem;
+  color: var(--tertiary-color);
+}
+
 .right-container div:last-of-type {
   display: flex;
   justify-content: center;
