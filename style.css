@@ -253,7 +253,7 @@ form:hover::before {
   color: var(--secondary-color);
 }
 
-.input-left input[type="email"]:invalid:not(:placeholder-shown) + label {
+.input-left input[type="email"]:invalid:not(:placeholder-shown) ~ label {
   color: var(--tertiary-color);
 }
 
